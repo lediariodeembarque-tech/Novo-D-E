@@ -1,0 +1,22 @@
+{
+  "lediariodeembarque@gmail.com": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "embarque",
+    "flights": [],
+    "archivedFlights": [],
+    "meusVoosDoDia": [],
+    "roboCustomization": {
+      "accent": "#f5b400",
+      "eyes": "#00e5ff",
+      "shell": "#ffffff",
+      "vestuario": "colete",
+      "cabeca": "quepe"
+    },
+    "lastUpdated": 1791640716258,
+    "deletedFlightIds": [
+      "test1"
+    ],
+    "passwordHash": "fdc63d45e0b3e8a1815c8b0cf8926bb5:3f2023920a9f202c23bc145de6d0068d41e17c420b5f267fcb8d5d832bbb532360169cedb9ae419a5f1f89f4cb19dc00a5a7c089bd3b33dd10f88d6b98eff007"
+  }
+}

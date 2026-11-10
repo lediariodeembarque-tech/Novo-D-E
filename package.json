@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "node server.js",
     "build": "node build.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "node --check server.js build.js generate-icons.js"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "@google/genai": "^2.27.0",
+    "express": "^5.2.1",
+    "firebase": "^13.0.0",
+    "ws": "^8.22.0"
   },
   "devDependencies": {
+    "@firebase/eslint-plugin-security-rules": "^0.0.2",
     "sharp": "^0.35.5"
   }
 }

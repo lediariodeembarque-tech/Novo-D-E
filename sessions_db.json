@@ -1,0 +1,624 @@
+{
+  "fa831b00c23720007c3014dc43df3e0144efdd86abdaa0e2d64708c5541fbb3c": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "embarque",
+    "createdAt": 1791875201077,
+    "expiresAt": 1794467201077
+  },
+  "0d08a27bf4c906cf7a34dec5499292da73766bf622e841ad0f7379b0e7eb082d": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1792153453711,
+    "expiresAt": 1794745453711
+  },
+  "e7da286d09c9518794872d78d801ae8455aeef8343b3696a29fe497aebb06f02": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1792153453790,
+    "expiresAt": 1794745453790
+  },
+  "9162b33067aa802b78c8e8a68d4e5368ca7e9ae96a91f610276a03e957ad2c2d": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "admin",
+    "createdAt": 1792397123162,
+    "expiresAt": 1794989123162
+  },
+  "f9c50c0dd35f5b073ff3593757a2b9bb597871ce394a8b63230a4a740d96a591": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "hcc",
+    "createdAt": 1792397123204,
+    "expiresAt": 1794989123204
+  },
+  "3715673a7c1b3df647721ef522a2a0c6b6d50fe694433bc85d964f37f7755bba": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "embarque",
+    "createdAt": 1792397123242,
+    "expiresAt": 1794989123242
+  },
+  "8d39e8cac750934a2bfe8adaf058ebad2796229a27144e1b3fd2b551c7a81080": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "admin",
+    "createdAt": 1792480183435,
+    "expiresAt": 1795072183435
+  },
+  "a11bb702f40e1d210d18515874887f2f898e09b831c1cc58f63c786a20fac10f": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "hcc",
+    "createdAt": 1792480183484,
+    "expiresAt": 1795072183484
+  },
+  "195f1ab621f46b57cf750b488e2fad82c1debd7c0fbb981b0a2ad2a24c8e59fd": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "embarque",
+    "createdAt": 1792480183532,
+    "expiresAt": 1795072183532
+  },
+  "03b69dfc2cc50a77d660da884b77c4a551b29c284b756b8de74dd940259ac6c0": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "admin",
+    "createdAt": 1792480215426,
+    "expiresAt": 1795072215426
+  },
+  "d105ae8f614c0e64fd00d2861e066c93a5e91ba315921f4e65cd200dcb5647c6": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "hcc",
+    "createdAt": 1792480215477,
+    "expiresAt": 1795072215477
+  },
+  "7b49b5636036c89542604feb01883d7896d68d0471859a70ce141b8b3f8500ae": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "embarque",
+    "createdAt": 1792480215527,
+    "expiresAt": 1795072215527
+  },
+  "6431b9d68cfa64a5a17b651a10ce791522a6208b5779728f9fe2a2b75e26c487": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "admin",
+    "createdAt": 1792567412903,
+    "expiresAt": 1795159412903
+  },
+  "10d8028df78fe52512324e331a4a12647997e62fa1dcd7299e99d1d298ac4711": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "hcc",
+    "createdAt": 1792567412953,
+    "expiresAt": 1795159412953
+  },
+  "58572df49426cdc2349e10716f327c24fe07ee935768284b0ce7d1ac22a94166": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "embarque",
+    "createdAt": 1792567412997,
+    "expiresAt": 1795159412997
+  },
+  "4427a542ab3735505178cb4a26c6697a82973e0baec830609953293ef5ea48c7": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793002133949,
+    "expiresAt": 1795594133949
+  },
+  "823662b2eb58c81192234a164974d6849af595f15a00081b1ee2f5c61cc276e8": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793002448585,
+    "expiresAt": 1795594448585
+  },
+  "303929f292145075e9689e0abaf5345fca5dd8ab06ee6f377a363493451b6f0c": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793002527787,
+    "expiresAt": 1795594527787
+  },
+  "55b445d51a6045c46ee28809ea452a6a4fd5213d465296a03e4ed59c9dc89ae6": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793002592954,
+    "expiresAt": 1795594592954
+  },
+  "42b14ae4f40ff1a837128136dee332ff171567293a63e130c4aa69e779ef9af1": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793004463929,
+    "expiresAt": 1795596463929
+  },
+  "1393321cf5369497df21220f7f889e3ca1d72d5a2755d84535123374a596ce2b": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793004487097,
+    "expiresAt": 1795596487097
+  },
+  "969092ef6e7b07623aa7b9d8a8db4a09d6b5b66707c040f4f4db429cc17866d2": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793004491681,
+    "expiresAt": 1795596491681
+  },
+  "2301ec66dc94555e4b088e2c79915112ab5510fd9e56ce817e80a1e9894717c4": {
+    "email": "admin@aeroporto.com",
+    "name": "admin",
+    "role": "embarque",
+    "createdAt": 1793260749475,
+    "expiresAt": 1795852749475
+  },
+  "524c0c790d32dbdc5d19968f2a922b132734f4823457b198653c86b04d369dd1": {
+    "email": "gestao@aeroporto.com",
+    "name": "gestao",
+    "role": "embarque",
+    "createdAt": 1793260749633,
+    "expiresAt": 1795852749633
+  },
+  "0c9208a4580f99e389814a1ed3e016fc566d855b25dcbb0b46ff8da18a10851c": {
+    "email": "operador.embarque@aeroporto.com",
+    "name": "operador.embarque",
+    "role": "embarque",
+    "createdAt": 1793260749780,
+    "expiresAt": 1795852749780
+  },
+  "c9327529c7b91b081510571c66c0c12969be9f6d7e294169d7525cd2d05c3b34": {
+    "email": "operador.hcc@aeroporto.com",
+    "name": "operador.hcc",
+    "role": "embarque",
+    "createdAt": 1793260749926,
+    "expiresAt": 1795852749926
+  },
+  "bc278cba30b0483c590670c7c3f6c7ee13c0feb12d42d15c2a7430ab56e6558a": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793261598164,
+    "expiresAt": 1795853598164
+  },
+  "aaaf3ef494f6aa1e8cd7bbb78f3708255cb08ce22fdcdb38b51e062cedf5c6c4": {
+    "email": "admin@aeroporto.com",
+    "name": "admin",
+    "role": "embarque",
+    "createdAt": 1793261598284,
+    "expiresAt": 1795853598284
+  },
+  "e8477ae99f3d18df0cf61cea58154c2963751c6f05b8db4644fe2c9a5975ce5e": {
+    "email": "gestao@aeroporto.com",
+    "name": "gestao",
+    "role": "embarque",
+    "createdAt": 1793261598385,
+    "expiresAt": 1795853598385
+  },
+  "8a772cbb5e800254b9d5e9e3defd85ac3c71357de93e8a932e7ebf42061ef386": {
+    "email": "operador.embarque@aeroporto.com",
+    "name": "operador.embarque",
+    "role": "embarque",
+    "createdAt": 1793261598485,
+    "expiresAt": 1795853598485
+  },
+  "8ab46746af572a316585bf44a05c2327367895bd322854a4ff2a41ee4244d6d6": {
+    "email": "operador.hcc@aeroporto.com",
+    "name": "operador.hcc",
+    "role": "embarque",
+    "createdAt": 1793261598596,
+    "expiresAt": 1795853598596
+  },
+  "d2547eebeb9244f9ede29e598ce38b9f1af196dd0642da0e1bf421ff31010fa3": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793261704764,
+    "expiresAt": 1795853704764
+  },
+  "549bc6261464f0fa631019675bd0312de17372838b41be11d021fb0f9772773b": {
+    "email": "admin@aeroporto.com",
+    "name": "admin",
+    "role": "admin",
+    "createdAt": 1793261704872,
+    "expiresAt": 1795853704872
+  },
+  "73b0b6424e8dafbf57b9cfd3f3fbff79816cf06b78ac7d21783031dd4aa55ec2": {
+    "email": "gestao@aeroporto.com",
+    "name": "gestao",
+    "role": "admin",
+    "createdAt": 1793261704972,
+    "expiresAt": 1795853704972
+  },
+  "b5250880648f357a6e2fb26b72943bebb6a58d017e2e407b601e0729825cb8cd": {
+    "email": "operador.embarque@aeroporto.com",
+    "name": "operador.embarque",
+    "role": "embarque",
+    "createdAt": 1793261705073,
+    "expiresAt": 1795853705073
+  },
+  "dc6919bb0dace53cd9ac307df67af840c877e4133b9d13aa00c072af894acab0": {
+    "email": "operador.hcc@aeroporto.com",
+    "name": "operador.hcc",
+    "role": "hcc",
+    "createdAt": 1793261705181,
+    "expiresAt": 1795853705181
+  },
+  "9b720539574c3982d8b5379a4069b3cf9939f86e9a07c6365274937b9398ec0f": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793344992615,
+    "expiresAt": 1795936992615
+  },
+  "9d7e9e2d9f3ae501358e37f450769ea168762634325dd83dfac91d63c7e4eae5": {
+    "email": "operador.teste@gru.com",
+    "name": "Operador Teste",
+    "role": "embarque",
+    "createdAt": 1793344992958,
+    "expiresAt": 1795936992958
+  },
+  "f0eb082b12c54828b424137bc2485d92929d9d45b14f9c991c2edd672ae69393": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793345010232,
+    "expiresAt": 1795937010232
+  },
+  "fb3a5fc42e9fea0e7b3d9e2194ec83acf3a5fa82c5ef0cdb1a9138e77b70a929": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793345017942,
+    "expiresAt": 1795937017942
+  },
+  "73dcdabf7084e9c04aeeb29a3d6dc662136bc7c966550779c311e7d0d5204133": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793345023698,
+    "expiresAt": 1795937023698
+  },
+  "3527de417a60d52b962c84d9da34e37537c3d1aa411423d26632f46e78a259b5": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793431569911,
+    "expiresAt": 1796023569911
+  },
+  "676d72dcf38ef3f9cfd5307ba64de6cb07817daf6874975edb9772f5275ef7a4": {
+    "email": "kethley.cruz@latam.com",
+    "name": "Kethley Cruz",
+    "role": "embarque",
+    "createdAt": 1793431569921,
+    "expiresAt": 1796023569921
+  },
+  "a786cebb025e6c995326b6066e0dce0e3d8d2a7078d211b95fc712c6b80cdc2d": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793431600693,
+    "expiresAt": 1796023600693
+  },
+  "42b65ac311d9b99cac633dd8a605efd019bd9a1eabfaf8bb46c68a363510e619": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793431650183,
+    "expiresAt": 1796023650183
+  },
+  "cd065a0d60b92d497fc0ee4ef9d82173984ba43fe30c75dfdca7cfa6c32c37cf": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793431667119,
+    "expiresAt": 1796023667119
+  },
+  "fe1fac4c2487c9cabe909e580565383f3b06c02bf1e44d98e370fc267cc38da9": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793704934122,
+    "expiresAt": 1796296934122
+  },
+  "b4f2a21a1ea94ac3ecc8afe36130903011d82e4175b1bc8d202ed25e0e7b364c": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793704934270,
+    "expiresAt": 1796296934270
+  },
+  "ea3bb2eb438d2996c82db5506cb83d3a80e9c1f589e1a400411bc8486cafa5cd": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793704934332,
+    "expiresAt": 1796296934332
+  },
+  "0732020cfbae803cb20f80acdff4c36b849c1df31fc882f6899eb6a0e155f7dd": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793704934423,
+    "expiresAt": 1796296934423
+  },
+  "ab469eee6d0e0f45bd1099e9c7378612783b49bed9d5f76169f0a7faf5b29485": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793704934528,
+    "expiresAt": 1796296934528
+  },
+  "54463c20c8576546ffee351c82926b031253ce748dd6880c347837d14469adb3": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793704941141,
+    "expiresAt": 1796296941141
+  },
+  "6ee26ac3f5453c798479b9b002b4f7d71a62f6bb8b4caa8987ce328d4bcbaf64": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793704941247,
+    "expiresAt": 1796296941247
+  },
+  "4e1a165792c2451d2ea2c91379da2bca3eed56ef9ecfcd659ed17443ea0f23ab": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793704941345,
+    "expiresAt": 1796296941345
+  },
+  "b5b81131d4265b00a474e617851c6ecf104fba55a6d5e37c7405b6f8e4ccffd3": {
+    "email": "agente_alfa@teste.com",
+    "name": "Operador Alfa",
+    "role": "embarque",
+    "createdAt": 1793704950373,
+    "expiresAt": 1796296950373
+  },
+  "a55dc0248635b6e1fed58b480699a3387c2831c090dfaa0aa58324237d1e7cb7": {
+    "email": "agente_alfa@teste.com",
+    "name": "Operador Alfa",
+    "role": "embarque",
+    "createdAt": 1793704950578,
+    "expiresAt": 1796296950578
+  },
+  "5e15b38a14bca082961381a796be557acc9ef9de33de9438b87e71f98e54e06a": {
+    "email": "agente_bravo@teste.com",
+    "name": "Operador Bravo",
+    "role": "hcc",
+    "createdAt": 1793704950641,
+    "expiresAt": 1796296950641
+  },
+  "3e65535e281fafdd2c083abdde0a826dcaabab1c94aac4f51611868ca651bdff": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793704954455,
+    "expiresAt": 1796296954455
+  },
+  "f69c7fc0637e78493f93edfed0f155e0677c04ead11dfc68cc4b43e002138b53": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793706747380,
+    "expiresAt": 1796298747380
+  },
+  "7ddf269ddabd4a068a355dc5c983a4ac4211d09fbd6741fe7a465eb5f9b462bb": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793706747468,
+    "expiresAt": 1796298747468
+  },
+  "2c467f33e9d5658fd58754f116833f8948da52cb49728b5f72b88fe5e7d6e3d1": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793706747557,
+    "expiresAt": 1796298747557
+  },
+  "6bebffb94c2d04e7479192cc6102365acf644123a480a8db0c2b741eac34eef9": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793706771090,
+    "expiresAt": 1796298771090
+  },
+  "6c21af3588b2f607e64a1d98955c2444d8db092cc70f785bcb84a84e89fae451": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793707766839,
+    "expiresAt": 1796299766839
+  },
+  "6bbee91827d40be262a13344ca41d18be4ad6c9af505d9fe23259bf6d2139707": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793707766965,
+    "expiresAt": 1796299766965
+  },
+  "ba0e37327a7bd9fb97536665977f6e68e6477d58fd4d7d3ea546703d0bb2a482": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793707767050,
+    "expiresAt": 1796299767050
+  },
+  "de34bcebd72d2b46e25fa18c94095aea57da173e751d9b085a11f5c5867f761f": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793707786819,
+    "expiresAt": 1796299786819
+  },
+  "686cec6f37d29b54a6ed08a7c2cd0340ea67ca58236612c16b73d69e1e5554a5": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793797893331,
+    "expiresAt": 1796389893331
+  },
+  "041322cf2979eaaff4f8d0c4afcb3a520a17af5b009bc00dfeb9e7253d4cc5f2": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793797897117,
+    "expiresAt": 1796389897117
+  },
+  "b5bf47aeb5b74b77b58a6a8265fbd9d7ecf0d65f9ec91c8f5ed61cf235d8e226": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793797897219,
+    "expiresAt": 1796389897219
+  },
+  "303022007f35cb34ae2d873b9f45e5f8978598a546e611ebe6e58df547fdafab": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793797897317,
+    "expiresAt": 1796389897317
+  },
+  "7f910e92682ed5ad5879822d1c29ee5c1fda6099bb816c84a6e2be721e9a4004": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793798603610,
+    "expiresAt": 1796390603610
+  },
+  "21f914f34041aee740dee2f4360f790f12e0735c078a5f8492553c61a70c1d69": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793798607185,
+    "expiresAt": 1796390607185
+  },
+  "518e3bea70a220a5f918ce0d1520731b5c3edb40c280cc500af8f9917d869a8b": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793798607300,
+    "expiresAt": 1796390607300
+  },
+  "1955067cdd378ea5433b0322f36a0e55faf8f8fcb0915b51fc185544018d8bae": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793798607401,
+    "expiresAt": 1796390607401
+  },
+  "31921161ebdba39fb7c418a3e3c53627b03ea23d41ead7586f55262a8db1e978": {
+    "email": "master.audittest@exemplo.com",
+    "name": "Supervisor Master Real",
+    "role": "master",
+    "createdAt": 1793798624160,
+    "expiresAt": 1796390624160
+  },
+  "fd09a2d46040080011cf01ba879f02b3a4d72b1abdd91d4ccf6f8621c18e57f4": {
+    "email": "master.audittest@exemplo.com",
+    "name": "Supervisor Master Real",
+    "role": "master",
+    "createdAt": 1793798624264,
+    "expiresAt": 1796390624264
+  },
+  "23982c098aa280433040a24fb94ecbe9435a303928d0f52da8a0e1f157e5052e": {
+    "email": "master.audittest@exemplo.com",
+    "name": "Supervisor Master Real",
+    "role": "master",
+    "createdAt": 1793798642556,
+    "expiresAt": 1796390642556
+  },
+  "c58caa90ae2db05445f2bf14c2a6857bc877b44a14201d21bd2d4303488ba1b6": {
+    "email": "master.audittest@exemplo.com",
+    "name": "Supervisor Master Real",
+    "role": "master",
+    "createdAt": 1793798647656,
+    "expiresAt": 1796390647656
+  },
+  "847767b9b5b304f97eda80bbd7ff8563f7de96c6ce7b7c658d39911bda79c343": {
+    "email": "master.audittest@exemplo.com",
+    "name": "Supervisor Master Real",
+    "role": "master",
+    "createdAt": 1793798663050,
+    "expiresAt": 1796390663050
+  },
+  "f5e4c9dded58fb7a2a46f81426a2bfb6978c0b6b748d6ba53562b933e913853e": {
+    "email": "operador.embarque.audittest@exemplo.com",
+    "name": "Operador Embarque",
+    "role": "embarque",
+    "createdAt": 1793798667298,
+    "expiresAt": 1796390667298
+  },
+  "60a3f0306749d0ee52cb66d674b08b3b9a50757e1297374c914553e609bc1a0a": {
+    "email": "agente.hcc.audittest@exemplo.com",
+    "name": "Agente HCC",
+    "role": "hcc",
+    "createdAt": 1793798667430,
+    "expiresAt": 1796390667430
+  },
+  "cf0b429db9b01703a8ef9847b2156562cd6ddbd938dce835628b3f727e5fa289": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793798667555,
+    "expiresAt": 1796390667555
+  },
+  "e5adf26ec60e67ca5ac2b9acdf20e9eac5809fc1dba300656f6e5c862f46d424": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1793798667982,
+    "expiresAt": 1796390667982
+  },
+  "30c868c9a2a96779898b1f1722ebf93656330b6593ff61d599072272af6235c9": {
+    "email": "operador_embarque@latam.com",
+    "name": "Agente Embarque",
+    "role": "embarque",
+    "createdAt": 1793804546529,
+    "expiresAt": 1796396546529
+  },
+  "6051c2241310dadbf0337733556b1013110c3e4b50fa2fa68331eae457b6fd38": {
+    "email": "controlador_hcc@latam.com",
+    "name": "Controlador HCC",
+    "role": "hcc",
+    "createdAt": 1793804547194,
+    "expiresAt": 1796396547194
+  },
+  "8e370a894186e23aafb9103f54587313243153bdd93a3cb538b988ded2374897": {
+    "email": "gestor_operacoes@latam.com",
+    "name": "Gestor Operações",
+    "role": "admin",
+    "createdAt": 1793804547820,
+    "expiresAt": 1796396547820
+  },
+  "test_e9c34ccd1f7cc00cc6e65640d503224835b4a425b5533ce6": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque (Master)",
+    "role": "master",
+    "expiresAt": 1794072616820
+  },
+  "07577792f73b004b917440c81ff17ea06957a35f8cb075d48b7a83748db36a07": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1794143244922,
+    "expiresAt": 1796735244922
+  },
+  "6e19ce6c9ca12045568b77e632463892a0be42203c2f1259051a3ba2112e7d0a": {
+    "email": "lediariodeembarque@gmail.com",
+    "name": "Diário de Embarque",
+    "role": "master",
+    "createdAt": 1794143255925,
+    "expiresAt": 1796735255925
+  }
+}

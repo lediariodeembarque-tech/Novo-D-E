@@ -1,0 +1,148 @@
+{
+  "sistema": "Diário de Embarque - GRU Airport",
+  "versao": "2.5.0-homologacao",
+  "tipo": "completo",
+  "geradoEm": "2026-10-26T08:16:45.817Z",
+  "horarioBrasilia": "26/10/2026 05:16 (BRT)",
+  "responsavel": "lediariodeembarque@gmail.com",
+  "estatisticas": {
+    "totalUsuarios": 8,
+    "totalVoosAtivos": 1,
+    "totalVoosArquivados": 0,
+    "totalFotosEEvidencias": 0
+  },
+  "dados": {
+    "usuarios": {
+      "lediariodeembarque@gmail.com": {
+        "email": "lediariodeembarque@gmail.com",
+        "name": "Diário de Embarque",
+        "role": "master",
+        "flights": [],
+        "archivedFlights": [],
+        "meusVoosDoDia": [],
+        "roboCustomization": {
+          "modelo": "robo_azul",
+          "accent": "#0284c7",
+          "eyes": "#00e5ff",
+          "shell": "#ffffff",
+          "vestuario": "nenhum",
+          "cabeca": "nenhum"
+        },
+        "lastUpdated": 1792567420937,
+        "deletedFlightIds": [
+          "test1"
+        ]
+      },
+      "test.auditoria@gru.com.br": {
+        "email": "test.auditoria@gru.com.br",
+        "name": "Auditor GRU",
+        "role": "embarque",
+        "flights": [],
+        "archivedFlights": [],
+        "meusVoosDoDia": [],
+        "deletedFlightIds": [],
+        "roboCustomization": {
+          "modelo": "assistente_holografico"
+        },
+        "createdAt": 1791962045575,
+        "lastUpdated": 1792815291033
+      },
+      "test_sec_user_a@diariodeembarque.com": {
+        "email": "test_sec_user_a@diariodeembarque.com",
+        "name": "test_sec_user_a",
+        "role": "embarque",
+        "flights": [],
+        "archivedFlights": [],
+        "meusVoosDoDia": [],
+        "deletedFlightIds": [],
+        "roboCustomization": null,
+        "createdAt": 1792048458455,
+        "lastUpdated": 1792567420937
+      },
+      "agente_alfa@teste.com": {
+        "lastUpdated": 1793002600781,
+        "archivedFlights": [],
+        "email": "agente_alfa@teste.com",
+        "flights": [
+          {
+            "id": "fl_alfa_001",
+            "voo": "LA3100",
+            "prefixo": "PT-XAA",
+            "destino": "SSA",
+            "portao": "201",
+            "status": "embarcando",
+            "ownerEmail": "agente_alfa@teste.com",
+            "updatedAt": 1793002600781
+          }
+        ],
+        "createdAt": 1792480183057,
+        "name": "Operador Alfa",
+        "roboCustomization": null,
+        "role": "embarque",
+        "meusVoosDoDia": [],
+        "deletedFlightIds": []
+      },
+      "operador.teste.1793002449020@exemplo.com": {
+        "email": "operador.teste.1793002449020@exemplo.com",
+        "name": "Operador Teste",
+        "role": "embarque",
+        "flights": [],
+        "archivedFlights": [],
+        "meusVoosDoDia": [],
+        "deletedFlightIds": [],
+        "roboCustomization": null,
+        "createdAt": 1793002449071,
+        "lastUpdated": 1793002449071
+      },
+      "operador.teste.1793002527998@exemplo.com": {
+        "email": "operador.teste.1793002527998@exemplo.com",
+        "name": "Operador Teste Atualizado",
+        "role": "embarque",
+        "flights": [],
+        "archivedFlights": [],
+        "meusVoosDoDia": [],
+        "deletedFlightIds": [],
+        "roboCustomization": null,
+        "createdAt": 1793002528051,
+        "lastUpdated": 1793002528057,
+        "setor": "Rampa",
+        "status": "Inativo",
+        "active": false
+      },
+      "agente_bravo@teste.com": {
+        "createdAt": 1792480183248,
+        "deletedFlightIds": [],
+        "lastUpdated": 1792480183248,
+        "email": "agente_bravo@teste.com",
+        "flights": [],
+        "meusVoosDoDia": [],
+        "role": "hcc",
+        "roboCustomization": null,
+        "archivedFlights": [],
+        "name": "Operador Bravo"
+      },
+      "conta_novissima_1793002600793@teste.com": {
+        "email": "conta_novissima_1793002600793@teste.com",
+        "name": "Novo Operador",
+        "role": "embarque",
+        "flights": [],
+        "archivedFlights": [],
+        "meusVoosDoDia": [],
+        "deletedFlightIds": [],
+        "roboCustomization": null,
+        "createdAt": 1793002600846,
+        "lastUpdated": 1793002600846
+      }
+    },
+    "cloudDB": {
+      "flights": [],
+      "archivedFlights": [],
+      "lastUpdated": 1792567420937
+    }
+  },
+  "integracaoGoogleDrive": {
+    "status": "preparado_para_oauth",
+    "destinatario": "lediariodeembarque@gmail.com",
+    "agendamentoAutomatico": "Diariamente às 12:00 BRT (15:00 UTC)"
+  }
+}

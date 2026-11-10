@@ -1,0 +1,194 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Perfil e dados operacionais de voos sincronizados do usuário no Diário de Embarque",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "E-mail do operador autenticado"
+        },
+        "name": {
+          "type": "string",
+          "description": "Nome completo do operador"
+        },
+        "role": {
+          "type": "string",
+          "description": "Perfil de acesso (embarque, hcc, admin)"
+        },
+        "flights": {
+          "type": "array",
+          "description": "Lista de voos ativos registrados pelo operador"
+        },
+        "archivedFlights": {
+          "type": "array",
+          "description": "Lista de voos finalizados e arquivados"
+        },
+        "meusVoosDoDia": {
+          "type": "array",
+          "description": "Voos designados para o turno do dia"
+        },
+        "roboCustomization": {
+          "type": "object",
+          "description": "Personalização de cores e vestuário do robô Nick"
+        },
+        "deletedFlightIds": {
+          "type": "array",
+          "description": "IDs de voos excluídos para propagação de exclusão"
+        },
+        "uid": {
+          "type": "string",
+          "description": "Identificador único Firebase Authentication (UID)"
+        },
+        "setor": {
+          "type": "string",
+          "description": "Equipe ou setor operacional (ex: Supervisão Geral, Gestão, HCC, Embarque LATAM)"
+        },
+        "turno": {
+          "type": "string",
+          "description": "Turno de trabalho (T1, T2, T3, T4)"
+        },
+        "avatarUrl": {
+          "type": "string",
+          "description": "URL da foto de perfil personalizada do colaborador"
+        },
+        "wallpaperUrl": {
+          "type": "string",
+          "description": "URL do papel de parede personalizado individual"
+        },
+        "personalCustomization": {
+          "type": "object",
+          "description": "Configurações de posicionamento e contraste do papel de parede"
+        },
+        "online": {
+          "type": "boolean",
+          "description": "Status de presença em tempo real (conectado/desconectado)"
+        },
+        "lastSeen": {
+          "type": "number",
+          "description": "Timestamp da última atividade ou presença"
+        },
+        "updatedAt": {
+          "type": "number",
+          "description": "Timestamp da última atualização"
+        }
+      },
+      "required": ["email"]
+    },
+    "Flight": {
+      "title": "Flight",
+      "description": "Registro de voo comercial no diário de bordo",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Identificador único do voo"
+        },
+        "voo": {
+          "type": "string",
+          "description": "Número do voo (ex: LA3241, G31502)"
+        },
+        "prefixo": {
+          "type": "string",
+          "description": "Prefixo da aeronave (ex: PR-TYF, PT-XPD)"
+        },
+        "destino": {
+          "type": "string",
+          "description": "Aeroporto de destino (IATA: BPS, VIX, SCL)"
+        },
+        "origem": {
+          "type": "string",
+          "description": "Aeroporto de origem (GRU)"
+        },
+        "horario": {
+          "type": "string",
+          "description": "Horário programado de partida"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status do voo (nao_iniciado, em_andamento, finalizado)"
+        },
+        "portao": {
+          "type": "string",
+          "description": "Portão de embarque"
+        },
+        "posicao": {
+          "type": "string",
+          "description": "Posição remota ou ponte de embarque"
+        },
+        "dataDep": {
+          "type": "string",
+          "description": "Data do voo YYYY-MM-DD"
+        },
+        "updatedAt": {
+          "type": "number",
+          "description": "Timestamp da última alteração"
+        }
+      },
+      "required": ["id", "voo"]
+    },
+    "TestConnection": {
+      "title": "TestConnection",
+      "description": "Documento de validação de conectividade com o Cloud Firestore",
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Status do teste"
+        }
+      }
+    },
+    "Auditoria": {
+      "title": "Auditoria",
+      "description": "Registros e métricas de auditoria inteligente de colaboradores e processos operacionais",
+      "type": "object",
+      "properties": {
+        "colaborador": { "type": "string" },
+        "processo": { "type": "string" },
+        "risco": { "type": "string" },
+        "status": { "type": "string" },
+        "observacoes": { "type": "number" },
+        "remediadas": { "type": "number" },
+        "criadoPor": { "type": "string" },
+        "timestamp": { "type": "number" }
+      }
+    },
+    "AuditoriaLog": {
+      "title": "AuditoriaLog",
+      "description": "Registro de eventos e tentativas de violação de acesso ao módulo de auditoria",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "ip": { "type": "string" },
+        "endpoint": { "type": "string" },
+        "motivo": { "type": "string" },
+        "timestamp": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Armazenamento persistente de configurações e diários de bordo de cada usuário"
+    },
+    "/flights/{flightId}": {
+      "schema": { "$ref": "#/entities/Flight" },
+      "description": "Coleção global de voos operacionais sincronizados entre equipes de solo"
+    },
+    "/test/{testId}": {
+      "schema": { "$ref": "#/entities/TestConnection" },
+      "description": "Documento para verificação da saúde da conexão com o Firestore"
+    },
+    "/auditorias/{auditId}": {
+      "schema": { "$ref": "#/entities/Auditoria" },
+      "description": "Registros auditáveis restritos a supervisores e gestores"
+    },
+    "/auditoria_logs/{logId}": {
+      "schema": { "$ref": "#/entities/AuditoriaLog" },
+      "description": "Trilha de segurança de acesso ao painel de auditoria"
+    }
+  }
+}
+

@@ -1,0 +1,103 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && (
+        request.auth.uid == userId ||
+        request.auth.token.email == userId
+      );
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'lediariodeembarque@gmail.com' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128;
+    }
+
+    function isValidUserProfile(data) {
+      return data is map &&
+        (!('email' in data) || (data.email is string && data.email.size() <= 128)) &&
+        (!('name' in data) || (data.name is string && data.name.size() <= 128)) &&
+        (!('role' in data) || (data.role is string && data.role.size() <= 32)) &&
+        (!('uid' in data) || (data.uid is string && data.uid.size() <= 128)) &&
+        (!('setor' in data) || (data.setor is string && data.setor.size() <= 64)) &&
+        (!('turno' in data) || (data.turno is string && data.turno.size() <= 16)) &&
+        (!('avatarUrl' in data) || (data.avatarUrl is string && data.avatarUrl.size() <= 500000) || data.avatarUrl == null) &&
+        (!('wallpaperUrl' in data) || (data.wallpaperUrl is string && data.wallpaperUrl.size() <= 2000000) || data.wallpaperUrl == null) &&
+        (!('personalCustomization' in data) || data.personalCustomization is map || data.personalCustomization == null) &&
+        (!('online' in data) || data.online is bool) &&
+        (!('lastSeen' in data) || data.lastSeen is number) &&
+        (!('flights' in data) || data.flights is list) &&
+        (!('archivedFlights' in data) || data.archivedFlights is list) &&
+        (!('meusVoosDoDia' in data) || data.meusVoosDoDia is list) &&
+        (!('deletedFlightIds' in data) || data.deletedFlightIds is list) &&
+        (!('roboCustomization' in data) || data.roboCustomization is map || data.roboCustomization == null) &&
+        (!('updatedAt' in data) || data.updatedAt is number) &&
+        (!('lastUpdated' in data) || data.lastUpdated is number);
+    }
+
+    function isValidFlight(data) {
+      return data is map &&
+        data.id is string && data.id.size() <= 128 &&
+        data.voo is string && data.voo.size() <= 32 &&
+        (!('ownerEmail' in data) || (data.ownerEmail is string && data.ownerEmail.size() <= 128)) &&
+        (!('prefixo' in data) || (data.prefixo is string && data.prefixo.size() <= 32)) &&
+        (!('destino' in data) || (data.destino is string && data.destino.size() <= 32)) &&
+        (!('status' in data) || (data.status is string && data.status.size() <= 32));
+    }
+
+    function isFlightOwner(flightData) {
+      return isSignedIn() && (
+        flightData.ownerEmail == request.auth.token.email ||
+        isAdmin()
+      );
+    }
+
+    // Coleção /users/{userId} - Acesso seguro com validação de formato e integridade
+    match /users/{userId} {
+      allow get, list: if true;
+      allow create, update: if isValidId(userId) && isValidUserProfile(request.resource.data);
+      allow delete: if isValidId(userId) && (isOwner(userId) || isAdmin());
+    }
+
+    // Coleção /flights/{flightId} - Acesso e mutação de voos operacionais
+    match /flights/{flightId} {
+      allow get, list: if true;
+      allow create, update: if isValidId(flightId) && isValidFlight(request.resource.data);
+      allow delete: if isValidId(flightId) && (!isSignedIn() || isFlightOwner(resource.data));
+    }
+
+    // Coleção /test/{testId} para verificação de conectividade do servidor
+    match /test/{testId} {
+      allow read, write: if true;
+    }
+
+    // Coleção /auditorias/{auditId} - Exclusivo para Gestão e Master
+    match /auditorias/{auditId} {
+      allow read, write: if isSignedIn() && (isAdmin() || request.auth.token.email == 'lediariodeembarque@gmail.com');
+    }
+
+    // Coleção /auditoria_logs/{logId} - Trilha de auditoria e segurança
+    match /auditoria_logs/{logId} {
+      allow read: if isSignedIn() && (isAdmin() || request.auth.token.email == 'lediariodeembarque@gmail.com');
+      allow create: if isSignedIn();
+      allow update, delete: if isSignedIn() && isAdmin();
+    }
+  }
+}
+

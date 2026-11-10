@@ -1,0 +1,71 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'lediariodeembarque@gmail.com' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-\\.\\@]+$');
+    }
+
+    function isValidUserProfile(data) {
+      return data is map &&
+        data.email is string && data.email.size() <= 128 &&
+        (!('name' in data) || (data.name is string && data.name.size() <= 128)) &&
+        (!('role' in data) || (data.role is string && data.role.size() <= 32)) &&
+        (!('flights' in data) || data.flights is list) &&
+        (!('archivedFlights' in data) || data.archivedFlights is list) &&
+        (!('meusVoosDoDia' in data) || data.meusVoosDoDia is list) &&
+        (!('deletedFlightIds' in data) || data.deletedFlightIds is list) &&
+        (!('roboCustomization' in data) || data.roboCustomization is map) &&
+        (!('updatedAt' in data) || data.updatedAt is number);
+    }
+
+    function isValidFlight(data) {
+      return data is map &&
+        data.id is string && data.id.size() <= 128 &&
+        data.voo is string && data.voo.size() <= 32 &&
+        (!('prefixo' in data) || (data.prefixo is string && data.prefixo.size() <= 32)) &&
+        (!('destino' in data) || (data.destino is string && data.destino.size() <= 32)) &&
+        (!('status' in data) || (data.status is string && data.status.size() <= 32));
+    }
+
+    // Coleção /users/{userId}
+    match /users/{userId} {
+      allow get: if isValidId(userId);
+      allow list: if isAdmin();
+      allow create, update: if isValidId(userId) && isValidUserProfile(request.resource.data);
+      allow delete: if isValidId(userId) && (isOwner(userId) || isAdmin());
+    }
+
+    // Coleção /flights/{flightId}
+    match /flights/{flightId} {
+      allow get, list: if true;
+      allow create, update: if isValidId(flightId) && isValidFlight(request.resource.data);
+      allow delete: if isValidId(flightId);
+    }
+
+    // Coleção /test/{testId} para verificação de conectividade
+    match /test/{testId} {
+      allow read, write: if true;
+    }
+  }
+}
